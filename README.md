@@ -51,7 +51,7 @@ gulp.task('demo',function(){       //gulp.task()注册任务，第一个参�
     animation: .25s, 100ms;
 }
 ```
-### terminal
+### terminal:
 ``` bash
 gulp demo
 ```
