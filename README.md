@@ -3,36 +3,36 @@
 
 安装gulp过程省略==
 
-终端（terminal）：
-### 创建目录：
+### 终端（terminal）：
+#### 创建目录：
 ``` bash
 mkdir 目录名
 ```
-### 进入目录：
+#### 进入目录：
 ``` bash
 cd 目录名
 ```
-### 创建sass目录
+#### 创建sass目录
 ``` bash
 mkdir sass
 ```
-### 创建sass文件
+#### 创建sass文件
 ``` bash
 touch sass／index.scss
 ```
-### 创建gulpfiles.js
+#### 创建gulpfiles.js
 ``` bash
 touch gulpfiles.js     //创建gulpfiles可以在生成package.json后创建
 
 npm init        //生成package.json,避免要手工生成
 ```
-### 安装依赖
+#### 安装依赖
 ``` bash
 npm install --save-dev gulp gulp-sass gulp-autoprefixer    //三个模块
 ```
 
-IDE:
-### 打开gulpfile.js 编写gulp构建逻辑
+### IDE:
+#### 打开gulpfile.js 编写gulp构建逻辑
 ``` bash
 var gulp = require('gulp');
 var sass = require('gulp-sass');
@@ -45,7 +45,7 @@ gulp.task('demo',function(){       //gulp.task()注册任务，第一个参�
   .pipe(gulp.desk('css'));
 })
 ```
-### 编写sass/index.scss
+#### 编写sass/index.scss
 ``` bash
 .star{
     animation: .25s, 100ms;
