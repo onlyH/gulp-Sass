@@ -38,7 +38,7 @@ var gulp = require('gulp');
 var sass = require('gulp-sass');
 var autoprefixer = require('gulp-autoprefixer');
 
-gulp.task('demo',function(){       //gulp.task()注册任务，第一个参数任务名称，第二个参数执行逻辑
+gulp.task('styles',function(){       //gulp.task()注册任务，第一个参数任务名称，第二个参数执行逻辑
   return gulp.src('sass/index.scss')    //指明原文件路径，补取其数据流
   .pipe(sass())
   .pipe(autoprefixer())  //pipe()模拟管道符操作方式
@@ -53,7 +53,7 @@ gulp.task('demo',function(){       //gulp.task()注册任务，第一个参�
 ```
 ### terminal:
 ``` bash
-gulp demo
+gulp styles
 ```
 此时会发现项目中多了一个css文件夹，里面有一个index.css
 ``` bash
